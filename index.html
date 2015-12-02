@@ -28,9 +28,11 @@
       
       $(function() {
         $("#start").on("click",function(){
+          connsole.log("stop");
           ws.send("start");
         });
         $("#stop").on("click",function(){
+          connsole.log("stop");
           ws.send("stop");
         });
     });
@@ -38,7 +40,7 @@
     </script>
   </head>
   <body>
-    <button id="start">Start</button> &nbsp; <button id="stop">Stop</button>
+    <button id="start">Start it</button> &nbsp; <button id="stop">Stop</button>
     <BR>
     <h1>Pings</h1>
     <ul id='pings'></ul>
