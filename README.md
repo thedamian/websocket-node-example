@@ -1,4 +1,4 @@
-# Node Websocket Exmple
+# Node Websocket Example
 
 A tiny demo of the simple websocket example using NODE for the backend
 
@@ -6,7 +6,8 @@ A tiny demo of the simple websocket example using NODE for the backend
 
 ``` close
 git clone https://github.com/thedamian/websocket-node-example
-npm install ws
+cd websocket-node-example
+npm install ws (this install the websocket library if you don't already have it)
 node index.js
 (Then browse to http://localhost:5000)
 ```
