@@ -1,5 +1,6 @@
 <html>
   <head>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <style>
       body {
         font-family: "Helvetica Neue", helvetica, arial;
@@ -16,7 +17,6 @@
         line-height: 1.4;
       }
     </style>
-
     <script>
       var host = location.origin.replace(/^http/, 'ws')
       var ws = new WebSocket(host);
@@ -25,9 +25,21 @@
         li.innerHTML = JSON.parse(event.data);
         document.querySelector('#pings').appendChild(li);
       };
+      
+      $(function() {
+        $("#start").on("click",function(){
+          ws.send("start");
+        });
+        $("#stop").on("click",function(){
+          ws.send("stop");
+        });
+    });
+      
     </script>
   </head>
   <body>
+    <button id="start">Start</button> &nbsp; <button id="stop">Stop</button>
+    <BR>
     <h1>Pings</h1>
     <ul id='pings'></ul>
   </body>
