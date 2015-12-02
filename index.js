@@ -21,9 +21,9 @@ wss.on("connection", function(ws) {
     }
   }, 1000)
 
-wss.on("message",function incoming(message) {
-  console.log(message);
-  switch(message) {
+wss.on("message",function(message) {
+  console.log(message.utf8Data);
+  switch(message.utf8Data) {
     case "start": RunMessage = true; 
                   break;
     case "stop":  RunMessage = false; 
