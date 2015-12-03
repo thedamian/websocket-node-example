@@ -22,11 +22,7 @@ wss.on("connection", function(ws) {
   }, 1000)
 
   ws.on('message', function incoming(message) {
-<<<<<<< HEAD
     //console.log('Websocket Message: %s', message);
-=======
-    console.log('received: %s', message);
->>>>>>> d0649abf929754299e2d56c5c3790f1e76cb2596
     switch(message) {
       case "start": RunMessage = true; 
                     break;
