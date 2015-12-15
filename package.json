@@ -3,16 +3,26 @@
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thedamian/websocket-node-example.git"
+    "url": "git+https://github.com/thedamian/websocket-node-example.git"
   },
   "dependencies": {
-    "express": "^4.4.5",
-    "ws": "0.4.x"
+    "express": "^4.13.3",
+    "ws": "^0.4.32"
   },
   "engines": {
     "node": "0.10.x"
   },
   "scripts": {
     "start": "node index.js"
-  }
+  },
+  "description": "A tiny demo of the simple websocket example using NODE for the backend",
+  "bugs": {
+    "url": "https://github.com/thedamian/websocket-node-example/issues"
+  },
+  "homepage": "https://github.com/thedamian/websocket-node-example#readme",
+  "main": "index.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
