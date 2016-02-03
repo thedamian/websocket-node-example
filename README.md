@@ -2,6 +2,10 @@
 
 A tiny demo of the simple websocket example using NODE for the backend
 
+# Live Demo:
+
+http://x.co/wsdemo
+
 # Running Locally
 
 ``` close
